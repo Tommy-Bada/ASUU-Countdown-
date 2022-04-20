@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Basis Grotesque Pro'), url('BasisGrotesquePro-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Basis Grotesque Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Basis Grotesque Pro Bold'), url('BasisGrotesquePro-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Basis Grotesque Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Basis Grotesque Pro Light'), url('BasisGrotesquePro-Light.woff') format('woff');
+    }
+*{
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Basis Grotesque Pro';
+    
+    
+}
+body{
+    background-color: rgba(14, 34, 99, 0.459);
+}
+h1{
+    color:white;
+    font-size: 30px;
+}
+.countdown_box{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    padding:10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 22px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 22px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 22px -2px rgba(0,0,0,0.75);
+}
+.countdown_number{
+    background-color:white;
+    color:black;
+    font-size: 50px;
+    font-weight: bold;
+}
+.countdown_letter{
+    background-color:white;
+    color:black;
+}
+
+@media screen and (min-width: 768px) {
+    #countdown{
+        display:grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+  }
