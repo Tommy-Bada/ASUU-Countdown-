@@ -1,31 +1,7 @@
-@font-face {
-    font-family: 'Basis Grotesque Pro';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Basis Grotesque Pro'), url('BasisGrotesquePro-Regular.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Basis Grotesque Pro Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Basis Grotesque Pro Bold'), url('BasisGrotesquePro-Bold.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Basis Grotesque Pro Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Basis Grotesque Pro Light'), url('BasisGrotesquePro-Light.woff') format('woff');
-    }
 *{
     text-align: center;
     box-sizing: border-box;
-    font-family: 'Basis Grotesque Pro';
-    
-    
+    font-family: "Roboto", serif;
 }
 body{
     /*background-color: rgba(14, 34, 99, 0.459); */
@@ -33,11 +9,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 20px;
 }
 h1{
     color:white;
     font-size: 30px;
-    margin-top: 50px;
 }
 .countdown_box{
     width: 100px;
@@ -67,8 +43,9 @@ h1{
 @media screen and (min-width: 768px) {
     #countdown{
         display:grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        position: relative;
-        top: 20%;
+        grid-template-columns: 24% 24% 24% 24%;
+        position: absolute;
+        top: 40%;
+        width: 100vw;
     }
   }
