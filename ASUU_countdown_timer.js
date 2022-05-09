@@ -1,5 +1,5 @@
 // ASUU strike call off date
-let countDownDate = new Date("May 16, 2022 00:00:00").getTime();
+let countDownDate = new Date("August 1, 2022 00:00:00").getTime();
 
 let everySecond = setInterval(function(){
     
