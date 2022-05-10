@@ -28,12 +28,44 @@ let everySecond = setInterval(function(){
     document.getElementById("minutes").innerHTML = minutesRemaining;
     document.getElementById("seconds").innerHTML = secondsRemaining;
 
+    // Display on the countdown Date
     if (distance < 0){
         clearInterval(everySecond);
         document.getElementById("days").innerHTML = 0;
-    document.getElementById("hours").innerHTML = 0;
-    document.getElementById("minutes").innerHTML = 0;
-    document.getElementById("seconds").innerHTML = 0;
+        document.getElementById("hours").innerHTML = 0;
+        document.getElementById("minutes").innerHTML = 0;
+        document.getElementById("seconds").innerHTML = 0;
 
+    }
+
+    //Display at 0
+    var countDownLetter = document.getElementsByClassName("countdown_letter")
+
+    if(secondsRemaining <= 1){
+        countDownLetter[3].innerHTML = "Second";
+    }
+    else{
+        countDownLetter[3].innerHTML = "Seconds";
+    }
+
+    if(minutesRemaining <= 1){
+        countDownLetter[2].innerHTML = "Minute";
+    }
+    else{
+        countDownLetter[2].innerHTML = "Minutes";
+    }
+
+    if(hoursRemaining <= 1){
+        countDownLetter[1].innerHTML = "Hour";
+    }
+    else{
+        countDownLetter[1].innerHTML = "Hours";
+    }
+
+    if(daysRemaining <= 1){
+        countDownLetter[0].innerHTML = "Day";
+    }
+    else{
+        countDownLetter[0].innerHTML = "Days";
     }
 }, 1000);
