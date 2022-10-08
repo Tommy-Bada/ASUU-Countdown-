@@ -1,5 +1,5 @@
-// ASUU strike call off date
-let countDownDate = new Date("August 1, 2022 00:00:00").getTime();
+// ASUU strike start date
+let countDownDate = new Date("February 14, 2022 00:00:00").getTime();
 
 let everySecond = setInterval(function(){
     
@@ -7,7 +7,7 @@ let everySecond = setInterval(function(){
     let now = new Date().getTime();
 
     // Gap between Present date and call off date (in miliseconds)
-    let distance = countDownDate - now;
+    let distance = now - countDownDate;
 
     // Measurement for each second, minute, hour and day
     let $1second = 1000;
